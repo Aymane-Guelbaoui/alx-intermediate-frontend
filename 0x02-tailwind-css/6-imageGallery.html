@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="p-4">
+  <header class="mb-4">
+    <h1 class="text-3xl font-bold">Image Gallery</h1>
+  </header>
+
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+    <section class="lg:col-span-2">
+      <!-- existing content, e.g. flexbox items or other sections -->
+      <div class="bg-red-200 p-4 mb-4">Flexbox Item 1</div>
+      <div class="bg-red-400 p-4">Flexbox Item 2</div>
+    </section>
+
+    <aside class="bg-green-200 p-4">Sidebar</aside>
+
+    <!-- New Image Gallery Section -->
+    <section class="gallery grid grid-cols-3 gap-4 mt-4">
+      <img src="https://via.placeholder.com/150" alt="Image 1" class="w-full h-auto" />
+      <img src="https://via.placeholder.com/150" alt="Image 2" class="w-full h-auto" />
+      <img src="https://via.placeholder.com/150" alt="Image 3" class="w-full h-auto" />
+      <img src="https://via.placeholder.com/150" alt="Image 4" class="w-full h-auto" />
+      <img src="https://via.placeholder.com/150" alt="Image 5" class="w-full h-auto" />
+      <img src="https://via.placeholder.com/150" alt="Image 6" class="w-full h-auto" />
+    </section>
+  </main>
+</body>
+</html>
